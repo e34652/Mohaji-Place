@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: reserve-check-service
+
+server:
+  port: 0
+
+# config server actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, info
+
+info:
+  app:
+    name: Reserve Check Service
+    description: 예약시스템 기능 중 예약확인, 예약승인/취소 기능을 제공

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: reserve-request-service
+
+server:
+  port: 0
+
+# config server actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, info
+
+info:
+  app:
+    name: Reserve Request Service
+    description: 예약시스템 기능 중 예약신청 기능을 제공
